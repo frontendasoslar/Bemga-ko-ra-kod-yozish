@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bemga ko'ra kod yozish</title>
+</head>
+<body>
+  <!-- Biz loyihalarimizni Bemga ko'ra yozishimiz loyihalarimizdagi kodlarimizni klaslarini tartibli ko'rinishga keltiradi va kodimizni boshqa loyihalarda bemalol ishlatishimiz mumkun bo'ladi-->
+  <!-- Bemga ko'ra kod yozishda quyidagi etaplar mavjud
+  1.Block - mustaqil block;
+  2.Element - blockning qismi;
+  3.Modifikator - holat-->
+  <!-- Masalan -->
+
+
+  <!-- Buyerda sitenav clasimiz block,  sitenav--vertical bodifikaton, sitenav__list va sitenav__item block-element, sitenav__item--active esa block-elementning modifikatori hisoblanadi-->
+  <nav class="sitenav sitenav--vertical">
+    <ul class="sitenav__list">
+      <li class="sitenav__item sitenav__item--active">
+        <a href="#" class="sitenav__link"></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <a href="#" class="button button--dark"></a>
+  <a href="#" class="button button--dark button--block"></a>
+  <a href="#" class="button button--light">
+    <span class="button__iconc"></span>
+    <span class="button__text"></span>
+  </a>
+</body>
+
+
+<!-- QOIDALAR -->
+<!-- 1.Bemga ko'ra kod yozayotganimizda elementning elementi bo'lishi mumkun emas -->
+<!-- Masalan: -->
+<nav class="sitenav">
+  <ul class="sitenav__list">
+    <li class="sitevav__list__item"></li>
+  </ul>
+</nav>
+<!-- sitevav__list__item bu klasimiz elementning elementi bo'lib qolayapdi bemga ko'ra bu mumkun enas buning o'rniga sitevav__item korinishida yozishimiz kerak-->
+
+<!-- 2.Elamant blockdan tashqarida no'la olmaydi -->
+<!-- 3.Blockning ichiga block__element yozish majburiy emas -->
+<!-- 4.Ham block ham modifikator ham element ishlatish mumkun -->
+
+</html>
